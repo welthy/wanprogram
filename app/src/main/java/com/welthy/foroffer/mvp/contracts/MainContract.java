@@ -1,7 +1,7 @@
-package com.welthy.foroffer.main;
+package com.welthy.foroffer.mvp.contracts;
 
-import com.welthy.foroffer.BasePresentor;
-import com.welthy.foroffer.BaseView;
+import com.welthy.foroffer.mvp.BasePresentor;
+import com.welthy.foroffer.mvp.BaseView;
 import com.welthy.foroffer.bean.ArticleBean;
 
 import java.util.List;

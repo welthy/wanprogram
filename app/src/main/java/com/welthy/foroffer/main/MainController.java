@@ -1,11 +1,10 @@
 package com.welthy.foroffer.main;
 
 import com.welthy.foroffer.bean.ArticleBean;
+import com.welthy.foroffer.mvp.models.MainDataSource;
 import com.welthy.foroffer.thread.ThreadUtil;
 import com.welthy.foroffer.util.FileParser;
-import com.welthy.foroffer.util.ToolKit;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static com.welthy.foroffer.util.PreConditions.checkNotNull;

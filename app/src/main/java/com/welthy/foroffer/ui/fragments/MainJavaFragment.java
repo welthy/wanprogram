@@ -1,4 +1,4 @@
-package com.welthy.foroffer.fragments;
+package com.welthy.foroffer.ui.fragments;
 
 import android.view.LayoutInflater;
 import android.view.View;

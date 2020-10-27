@@ -1,4 +1,4 @@
-package com.welthy.foroffer.main;
+package com.welthy.foroffer.mvp.models;
 
 import com.welthy.foroffer.bean.ArticleBean;
 

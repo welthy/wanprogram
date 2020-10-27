@@ -1,4 +1,4 @@
-package com.welthy.foroffer;
+package com.welthy.foroffer.ui;
 
 import android.os.Bundle;
 

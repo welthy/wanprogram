@@ -7,11 +7,9 @@ import com.alibaba.fastjson.JSON;
 import com.welthy.foroffer.ForOfferApp;
 import com.welthy.foroffer.bean.ArticleBean;
 import com.welthy.foroffer.cache.db.FODbManager;
-import com.welthy.foroffer.main.MainDataSource;
+import com.welthy.foroffer.mvp.models.MainDataSource;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;

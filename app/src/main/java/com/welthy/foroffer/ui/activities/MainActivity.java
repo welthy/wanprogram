@@ -1,29 +1,24 @@
-package com.welthy.foroffer.main;
+package com.welthy.foroffer.ui.activities;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.util.Log;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
-import com.welthy.foroffer.BaseFOActivity;
+import com.welthy.foroffer.main.MainPageFragmentAdapter;
+import com.welthy.foroffer.ui.BaseFOActivity;
 import com.welthy.foroffer.R;
-import com.welthy.foroffer.bean.ArticleBean;
-import com.welthy.foroffer.fragments.BaseFOFragment;
-import com.welthy.foroffer.fragments.MainAndroidFragment;
-import com.welthy.foroffer.fragments.MainBasicFragment;
-import com.welthy.foroffer.fragments.MainJavaFragment;
+import com.welthy.foroffer.ui.fragments.MainAndroidFragment;
+import com.welthy.foroffer.ui.fragments.MainBasicFragment;
+import com.welthy.foroffer.ui.fragments.MainJavaFragment;
 import com.welthy.foroffer.util.LogUtil;
 
 import java.util.ArrayList;
@@ -66,7 +61,6 @@ public class MainActivity extends BaseFOActivity{
 
         initToolbar();
         initNavigationDrawer();
-
         initFragmentsAndTitles();
         initViewPager();
     }
@@ -117,21 +111,6 @@ public class MainActivity extends BaseFOActivity{
         mMainVP.setCurrentItem(0);
 
         mTabLayout.setupWithViewPager(mMainVP);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        return super.onOptionsItemSelected(item);
     }
 
     class MainViewPagerListener implements ViewPager.OnPageChangeListener {

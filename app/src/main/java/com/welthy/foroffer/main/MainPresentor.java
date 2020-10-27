@@ -2,10 +2,12 @@ package com.welthy.foroffer.main;
 
 import com.welthy.foroffer.bean.ArticleBean;
 import com.welthy.foroffer.cache.db.FODbManager;
+import com.welthy.foroffer.mvp.contracts.MainContract;
+import com.welthy.foroffer.mvp.models.MainDataSource;
 
 import java.util.List;
 
-public class MainPresentor implements MainContract.Presentor{
+public class MainPresentor implements MainContract.Presentor {
 
     private MainContract.View mMainView;
     private MainController mMainController;

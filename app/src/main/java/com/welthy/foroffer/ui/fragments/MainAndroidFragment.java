@@ -1,4 +1,4 @@
-package com.welthy.foroffer.fragments;
+package com.welthy.foroffer.ui.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,16 +11,14 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.welthy.foroffer.R;
 import com.welthy.foroffer.bean.ArticleBean;
 import com.welthy.foroffer.main.MainAdapter;
-import com.welthy.foroffer.main.MainContract;
+import com.welthy.foroffer.mvp.contracts.MainContract;
 import com.welthy.foroffer.main.MainController;
-import com.welthy.foroffer.main.MainPageFragmentAdapter;
 import com.welthy.foroffer.main.MainPresentor;
 import com.welthy.foroffer.util.FFConstants;
 import com.welthy.foroffer.util.LogUtil;
@@ -29,7 +27,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class MainAndroidFragment extends BaseFOFragment implements MainContract.View {
 

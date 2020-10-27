@@ -1,4 +1,4 @@
-package com.welthy.foroffer;
+package com.welthy.foroffer.mvp;
 
 public interface BaseView<T> {
 

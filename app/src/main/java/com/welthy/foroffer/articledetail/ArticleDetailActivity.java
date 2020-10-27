@@ -6,20 +6,15 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.webkit.WebView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
-import com.welthy.foroffer.BaseFOActivity;
+import com.welthy.foroffer.ui.BaseFOActivity;
 import com.welthy.foroffer.R;
 import com.welthy.foroffer.bean.ArticleBean;
-import com.welthy.foroffer.cache.db.FODbManager;
-import com.welthy.foroffer.thread.ThreadUtil;
 import com.welthy.foroffer.util.LogUtil;
 
-import java.util.Arrays;
 import java.util.List;
 
 import butterknife.BindView;

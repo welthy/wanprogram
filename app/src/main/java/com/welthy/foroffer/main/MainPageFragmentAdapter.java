@@ -6,8 +6,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.welthy.foroffer.fragments.BaseFOFragment;
-
 import java.util.List;
 
 public class MainPageFragmentAdapter extends FragmentPagerAdapter {

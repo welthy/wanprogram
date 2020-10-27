@@ -1,4 +1,4 @@
-package com.welthy.foroffer.fragments;
+package com.welthy.foroffer.ui.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,8 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.welthy.foroffer.R;
-import com.welthy.foroffer.util.FFConstants;
 import com.welthy.foroffer.util.LogUtil;
 
 import butterknife.ButterKnife;

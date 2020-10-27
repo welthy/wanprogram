@@ -1,4 +1,4 @@
-package com.welthy.foroffer.main;
+package com.welthy.foroffer.main.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.welthy.foroffer.R;
 import com.welthy.foroffer.bean.ArticleBean;
-import com.welthy.foroffer.main.MainAdapter;
+import com.welthy.foroffer.main.adapters.MainAndroidAdapter;
 import com.welthy.foroffer.mvp.contracts.MainContract;
 import com.welthy.foroffer.main.MainController;
 import com.welthy.foroffer.main.MainPresentor;
@@ -38,7 +38,7 @@ public class MainAndroidFragment extends BaseFOFragment implements MainContract.
     private final int MSG_UPDATE_DATA = 0x01;
 
     private MainContract.Presentor mPresentor;
-    private MainAdapter mMainAdapter;
+    private MainAndroidAdapter mMainAndroidAdapter;
     private List<ArticleBean> mDatas;
 
     private Context mContext;
@@ -49,7 +49,7 @@ public class MainAndroidFragment extends BaseFOFragment implements MainContract.
             switch (msg.what) {
                 case MSG_UPDATE_DATA:
                     LogUtil.normal(TAG,"update datas");
-                    mMainAdapter.updateDatas((List<ArticleBean>) msg.obj);
+                    mMainAndroidAdapter.updateDatas((List<ArticleBean>) msg.obj);
                     break;
             }
         }
@@ -75,9 +75,9 @@ public class MainAndroidFragment extends BaseFOFragment implements MainContract.
         mContext = getActivity();
         mPresentor = new MainPresentor(this, new MainController());
         mDatas = new ArrayList<>();
-        mMainAdapter = new MainAdapter(mContext,mDatas);
+        mMainAndroidAdapter = new MainAndroidAdapter(mContext,mDatas);
         mAndroidRecycleriew.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
-        mAndroidRecycleriew.setAdapter(mMainAdapter);
+        mAndroidRecycleriew.setAdapter(mMainAndroidAdapter);
 
         if ((mDatas != null) && (mDatas.size() <= 0)) {
             LogUtil.normal(TAG, "load article data.");

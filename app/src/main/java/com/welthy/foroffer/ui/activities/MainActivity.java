@@ -13,7 +13,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
-import com.welthy.foroffer.main.MainPageFragmentAdapter;
+import com.welthy.foroffer.main.adapters.MainPageFragmentAdapter;
 import com.welthy.foroffer.ui.BaseFOActivity;
 import com.welthy.foroffer.R;
 import com.welthy.foroffer.ui.fragments.MainAndroidFragment;

@@ -1,4 +1,4 @@
-package com.welthy.foroffer.main;
+package com.welthy.foroffer.main.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,12 +19,12 @@ import com.welthy.foroffer.bean.ArticleBean;
 
 import java.util.List;
 
-public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ArticleViewHolder> {
+public class MainAndroidAdapter extends RecyclerView.Adapter<MainAndroidAdapter.ArticleViewHolder> {
 
     private Context mContext;
     private List<ArticleBean> mDatas;
 
-    public MainAdapter(Context context, List<ArticleBean> datas) {
+    public MainAndroidAdapter(Context context, List<ArticleBean> datas) {
         this.mContext = context;
         this.mDatas = datas;
     }
